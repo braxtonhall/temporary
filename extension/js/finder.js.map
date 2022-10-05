@@ -1,0 +1,1 @@
+{"version":3,"file":"finder.js","mappings":";;;;;AAAA","sources":["webpack:///./ts/finder/finder.ts"],"sourcesContent":["console.log(\"In PDF finder script\");\n"],"names":[],"sourceRoot":""}
