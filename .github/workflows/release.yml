@@ -32,7 +32,7 @@ jobs:
                     type: "zip"
                     filename: "extension.zip"
                     path: "extension"
-                    exclusions: "./extension/ts*"
+                    exclusions: "/*extension/ts*"
             -   name: Upload Release
                 uses: ncipollo/release-action@v1
                 with:
