@@ -22,5 +22,8 @@
 		"lint": "eslint extension/ts/ --ext .ts",
 		"fix": "yarn lint --fix",
 		"pretty": "yarn prettier --editorconfig true --config ./.prettierrc.json --write extension/ts/*.ts"
+	},
+	"dependencies": {
+		"ajv": "^8.11.0"
 	}
 }

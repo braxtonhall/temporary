@@ -1,4 +1,4 @@
-name: Run linter # & tests
+name: Check people
 
 on:
     pull_request:
@@ -20,12 +20,12 @@ jobs:
                 uses: actions/setup-node@v1
                 with:
                     node-version: ${{ matrix.node }}
-
             -   name: Install packages
                 run: yarn install
-            -   name: Compile TypeScript
-                run: yarn build
-            -   name: Run linter
-                run: yarn lint
-#            -   name: Run tests
-#                run: yarn test
+            -   name: Check people
+                run: node bin/checkPeople.js ${{ github.actor }}
+            -   name: Prettify code
+                uses: creyD/prettier_action@v4.2
+                with:
+                    same_commit: true
+                    prettier_options: --write people.json
