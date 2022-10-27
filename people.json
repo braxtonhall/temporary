@@ -303,6 +303,9 @@
     "github": "StuartLiv",
     "name": "Stuart Livingstone",
     "title": "BSc Student, UBC",
+
+
+
     "entries": [
       {
         "name": "ThetaFibN",
@@ -317,7 +320,9 @@
     "entries": [
       {
         "name": "logn?",
-        "link": "./entries/Tarcisio-Teixeira/fib.py"
+
+        "link": "./entries/Tarcisio-Teixeira/fib.py",
+
       },
       {
         "name": "differential",
